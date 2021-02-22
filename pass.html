@@ -1,0 +1,25 @@
+<html>
+<head><script>
+function password(){
+    var pw1=document.getElementById("pwd1").value;
+    var pw2=document.getElementById("pwd2").value;
+    if(pw1.length<8){
+        alert("Password lenght must be atleast 8");
+    }
+    else if(pw1!=pw2){
+        alert("Password didn't match");
+    }
+    else{
+        alert("Password created successfully");
+    }
+}
+    
+</script></head>    
+<body>
+    <form>
+        Enter password<input type="password" id="pwd1"><br>
+        Confirm password<input type="password" id="pwd2"><br>
+        <input type="submit" value="submit" onclick="password()">
+    </form>
+</body>
+</html>
